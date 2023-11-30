@@ -5,6 +5,7 @@ const apiOptions = {server: 'http://localhost:3000'}
 
 if(process.env.NODE_ENV == 'production'){
     apiOptions.server = 'https://kimseungmin.onrender.com'
+    //apiOptions.server = 'https://loc8r-data-147ca6428ac3.herokuapp.com'
 }
 
 /*const path = '/api/locations'
@@ -98,7 +99,7 @@ const homelist = (req,res) => {
         qs: {
             lng: 126.964062,
             lat: 37.468769,
-            maxDistance: 20000
+            maxDistance: 20000000
             /*lng: 1,
             lat: 1,
             maxDistance: 0.002*/
